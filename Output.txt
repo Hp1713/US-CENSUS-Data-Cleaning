@@ -1,0 +1,108 @@
+Data Types of Data Frame:
+State        object
+TotalPop      int64
+Hispanic     object
+White        object
+Black        object
+Native       object
+Asian        object
+Pacific      object
+Income       object
+GenderPop    object
+dtype: object
+
+Data Frame:
+            State  TotalPop             Hispanic  ...                Pacific               Income            GenderPop
+0    Rhode Island   1053661  13.356666666666678%  ...  0.035833333333333335%  $59125.270833333336      510388M_543273F
+1  South Carolina   4777576   5.056684981684991%  ...  0.046978021978021964%  $46296.807763401106    2322409M_2455167F
+2    South Dakota    843190  3.2396396396396376%  ...   0.04189189189189189%   $51805.40540540541      423477M_419713F
+3       Tennessee   6499615   4.720026972353339%  ...   0.04315576534052599%  $47328.083616587355    3167756M_3331859F
+4           Texas  26538614   38.04673809068304%  ...   0.06881576430074614%  $55874.522600500095  13171316M_13367298F
+
+[5 rows x 10 columns]
+
+Data Types of Data Frame:
+State        object
+TotalPop      int64
+Hispanic     object
+White        object
+Black        object
+Native       object
+Asian        object
+Pacific      object
+Income      float64
+Men           int64
+Women       float64
+dtype: object
+
+Missing values in columns:
+State       0
+TotalPop    0
+Hispanic    0
+White       0
+Black       0
+Native      0
+Asian       0
+Pacific     5
+Income      0
+Men         0
+Women       3
+dtype: int64
+
+Rows with missing values 
+:           State  TotalPop             Hispanic               White  ...               Pacific        Income      Men      Women
+12      Maryland   5930538    8.47249820014399%    52.679049676026%  ...  0.03628509719222463%  78765.400725  2872643        NaN
+19       Montana   1014699  3.2688888888888896%  86.41555555555554%  ...  0.07222222222222222%  47645.682836   510163        NaN
+34  North Dakota    721640   2.832682926829267%  87.44829268292683%  ...                   NaN  58188.112195   367963   353677.0
+43        Kansas   2892987  11.644342105263148%  75.95828947368425%  ...                   NaN  53885.612648  1439862  1453125.0
+47      Maryland   5930538    8.47249820014399%    52.679049676026%  ...  0.03628509719222463%  78765.400725  2872643        NaN
+48      Colorado   5278906   20.78438003220608%  69.89557165861504%  ...                   NaN  64657.801787  2648667  2630239.0
+50      Delaware    926454    8.82476635514019%  64.63271028037383%  ...                   NaN  61827.976636   448413   478041.0
+59      Colorado   5278906   20.78438003220608%  69.89557165861504%  ...                   NaN  64657.801787  2648667  2630239.0
+
+[8 rows x 11 columns]
+/Users/hectorprado/opt/anaconda3/lib/python3.8/site-packages/pandas/core/generic.py:5516: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self[name] = value
+
+Comfirming Nan values were filled:
+       State  TotalPop           Hispanic             White  ...               Pacific        Income      Men      Women
+12  Maryland   5930538  8.47249820014399%  52.679049676026%  ...  0.03628509719222463%  78765.400725  2872643  3057895.0
+47  Maryland   5930538  8.47249820014399%  52.679049676026%  ...  0.03628509719222463%  78765.400725  2872643  3057895.0
+
+[2 rows x 11 columns]
+
+Amount of duplicates in the US Census data frame:
+7
+
+Amount of null values left in the columns:
+State       0
+TotalPop    0
+Hispanic    0
+White       0
+Black       0
+Native      0
+Asian       0
+Pacific     4
+Income      0
+Men         0
+Women       0
+dtype: int64
+
+No more null values:
+State       0
+TotalPop    0
+Hispanic    0
+White       0
+Black       0
+Native      0
+Asian       0
+Pacific     0
+Income      0
+Men         0
+Women       0
+dtype: int64
+

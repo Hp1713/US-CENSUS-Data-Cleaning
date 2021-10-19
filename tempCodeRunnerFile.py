@@ -1,0 +1,1 @@
+plt.scatter(us_census.Women, us_census.Income)
