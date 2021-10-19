@@ -1,0 +1,2 @@
+# US-CENSUS-Data-Cleaning
+The purpose of this project is to concatenate different CSV files with the same name using glob function. Once the files are concatenated I cleaned the data by deleting duplicates, filling up null values, and reshaping the data so it will make the analysis of this easier. I plotted different plots such as scatter points and histograms to depict data of different outcomes. 
